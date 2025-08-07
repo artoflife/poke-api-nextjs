@@ -64,7 +64,7 @@ export default function PokemonFilter({ initialValue = '' }: PokemonFilterProps)
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="semua">Semua Tipe</SelectItem>
-            {types.map((type: any) => (
+            {types.map((type: string) => (
               <SelectItem key={type.name} value={type.name}>
                 {type.name.charAt(0).toUpperCase() + type.name.slice(1)}
               </SelectItem>
